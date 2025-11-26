@@ -3,136 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Leitura RFID</title>
 </head>
 <body>
-    
+
     <div class="nav">
-        <nav>
-            <h1>LEITURAS RFID<h1>
-        </nav>
+        <h1>LEITURAS TAGS</h1>
     </div>
 
-    <div class="select-city">
-        <select name="selecione-cidade" id="selecione-cidade">
-            <option value="cba">CUIABÁ</option>
-            <option value="anp">ANÁPOLIS</option>
-            <option value="brb">BRASÍLIA</option>
-        </select>
+    <div class="dashboard">
+        <img src="icons/dashboard.png"> 
+        <h1>DASHBOARD</h1>
     </div>
 
     <div class="container">
 
-        <div class="total"> 
-            <h1>TOTAL</h1> <br>
-            <h2>22.856</h2>
+        <div class="area">
+            <h4 class="titulo">PORTAL ENTRADA</h4>
         </div>
 
-        <div class="lidas"> 
-            <h1>TOTAL LIDAS</h1> <br>
-            <h2>19.487</h2>
-        </div>
+       <!-- <div class="tags-lidas">
+            <p>TOTAL TAGS LIDAS</p>
+            <h1>22.385</h1>
+        </div>--> 
 
-        <div class="nao-lidas"> 
-            <h1>TOTAL NÃO LIDAS</h1> <br>
-            <h2>2.898</h2>
-        </div>
+        <div class="antenas">
 
-    </div>
+            <!-- ANTENA 1 -->
+            <div class="antena on">
 
-    <div class="content-wrapper">
-
-        <div class="container-table">
-            <table>
-                <tr>
-                    <th>TAGS</th>
-                    <th>DATA</th>
-                    <th>HORA</th>
-                    <th>STATUS</th>
-                </tr>
-
-                <tr>
-                    <td>C25087</td>
-                    <td>2025-11-24</td>
-                    <td>19:26</td>
-                    <td class="sucess">SUCESS</td>
-                </tr>
-
-                <tr>
-                    <td>C25087</td>
-                    <td>2025-11-24</td>
-                    <td>19:26</td>
-                    <td class="error">ERROR</td>
-                </tr>
-
-            </table>
-        </div>
-
-        <div class="container-pie-chart">
-            <canvas id="graficoLidas"></canvas>
-        </div>
-
-    </div>
-
-    <div class="content-wrapper">
-
-        <div class="time-graph">
-            <canvas id="graficoPicoHora"></canvas>
-        </div>
-
-    </div>
-
-    <div class="content-wrapper">
-
-        <div class="time-low">
-            
-            <div class="chart-left">
-                <select id="select-date">
-                    <option value="7">Últimos 7 dias</option>
-                    <option value="15">Últimos 15 dias</option>
-                    <option value="30">Últimos 30 dias</option>
-                </select>
-
-                <canvas id="grafico7dias"></canvas>
-            </div>
-
-            <div class="right-panel">
-
-                <select id="match">
-                    <option value="soma">SOMA</option>
-                    <option value="media">MÉDIA</option>
-                    <option value="max">MÁXIMO</option>
-                    <option value="min">MÍNIMO</option>
-                </select>
-
-                <div class="card total-card white">
-                    <h3>TOTAL</h3>
-                    <h2>22.385</h2>
+                <div class="topo">
+                    <img src="icons/antenna_rfid_on.png">
+                    <h3>ANTENA 1</h3>
                 </div>
 
-                <div class="card total-card green">
-                    <h3>TOTAL</h3>
-                    <h2>22.385</h2>
+                <div class="total-leitura">
+                    <h1>Total Leitura</h1>
+                    <h2>22.858</h2>
                 </div>
 
-                <div class="card total-card red">
-                    <h3>TOTAL</h3>
-                    <h2>22.385</h2>
+                <div class="meios">
+                    <div class="meio1">
+                        <p class="label">Ultima leitura</p>
+                        <h2>15s</h2>
+                    </div>
+
+                    <div class="meio2">
+                        <p class="label">Últimos 60s</p>
+                        <h2>1026</h2>
+                    </div>
+                </div>
+
+                <div class="leituras">
+                    <h2>Leituras Recentes</h2>
+
+                    <table>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>0s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>8s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>12s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>15s</td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
 
-        </div>
+
+            <!-- ANTENA 2 -->
+            <div class="antena on">
+
+                <div class="topo">
+                    <img src="icons/antenna_rfid_on.png">
+                    <h3>ANTENA 2</h3>
+                </div>
+
+                <div class="total-leitura">
+                    <h1>Total Leitura</h1>
+                    <h2>22.858</h2>
+                </div>
+
+                <div class="meios">
+                    <div class="meio1">
+                        <p class="label">Ultima leitura</p>
+                        <h2>15s</h2>
+                    </div>
+
+                    <div class="meio2">
+                        <p class="label">Últimos 60s</p>
+                        <h2>1026</h2>
+                    </div>
+                </div>
+
+                <div class="leituras">
+                    <h2>Leituras Recentes</h2>
+
+                    <table>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>0s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>8s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>12s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>15s</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- ANTENA 3 -->
+            <div class="antena on">
+
+                <div class="topo">
+                    <img src="icons/antenna_rfid_on.png">
+                    <h3>ANTENA 3</h3>
+                </div>
+
+                <div class="total-leitura">
+                    <h1>Total Leitura</h1>
+                    <h2>22.858</h2>
+                </div>
+
+                <div class="meios">
+                    <div class="meio1">
+                        <p class="label">Ultima leitura</p>
+                        <h2>15s</h2>
+                    </div>
+
+                    <div class="meio2">
+                        <p class="label">Últimos 60s</p>
+                        <h2>1026</h2>
+                    </div>
+                </div>
+
+                <div class="leituras">
+                    <h2>Leituras Recentes</h2>
+
+                    <table>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>0s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>8s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>12s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>15s</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
 
 
+            <!-- ANTENA 4 OFF -->
+            <div class="antena off">
+
+                <div class="topo-off">
+                    <img src="icons/antenna_rfid_off.png">
+                    <h3>ANTENA 4</h3>
+                </div>
+
+                <div class="total-leitura-off">
+                    <h1>Total Leitura</h1>
+                    <h2>22.858</h2>
+                </div>
+
+                <div class="meios-off">
+                    <div class="meio1-off">
+                        <p class="label">Ultima leitura</p>
+                        <h2>15s</h2>
+                    </div>
+
+                    <div class="meio2-off">
+                        <p class="label">Últimos 60s</p>
+                        <h2>1026</h2>
+                    </div>
+                </div>
+
+                <div class="leituras-off">
+                    <h2>Leituras Recentes</h2>
+
+                    <table>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>0s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>8s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>12s</td>
+                        </tr>
+                        <tr>
+                            <td>60SDGJS568</td>
+                            <td>15s</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>,            
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="graphics/total_tags_lidas.js"></script>
-    <script src="graphics/grafico_hora.js"></script>
-    <script src="graphics/grafico_dias.js"></script>
+    <script src="script/scale.js"></script>
 
 </body>
 </html>
