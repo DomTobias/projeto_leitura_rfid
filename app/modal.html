@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/modal.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="modal">
+
+        <div class="container">
+
+            <div class="antena1">
+                <img src="icons/antenna_rfid_on.png" alt="">
+                <p>ANTENA 1</p>
+            </div>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="total-dia">
+                <h1>Total do Dia</h1>
+                <p>22.858</p>
+            </div>
+
+            <div class="leituras">
+
+                <h1>Leituras</h1>
+
+                <div class="tabela">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>TAGS</th>
+                                <th>DATA</th>
+                                <th>HORA</th>
+                                <th>TEMPO LEITURA</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>60SDGJ5568</td>
+                                <td>2025-11-25</td>
+                                <td>14:32:10</td>
+                                <td>0S</td>
+                            </tr>
+
+                            <tr>
+                                <td>60SDGJ5568</td>
+                                <td>2025-11-25</td>
+                                <td>14:32:10</td>
+                                <td>0S</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="grafico">
+            <canvas id="chartHoras"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graphics/grafico_hora_hora.js"></script>
+</body>
+</html>

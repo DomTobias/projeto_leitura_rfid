@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* ---------------- GERAL ---------------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: "Open Sans", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ---------------- MODAL PRINCIPAL ---------------- */
+
+.modal {
+    background-color: #1A1A1A;
+    border: 3px solid #00AFAA;
+    border-radius: 12px;
+
+    width: 95%;
+    height: 85vh;
+
+    padding: 30px;
+    box-sizing: border-box;
+
+    display: flex;
+    gap: 40px;
+}
+
+/* ---------------- LADO ESQUERDO ---------------- */
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.antena1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.antena1 img {
+    width: 50px;
+    height: 50px;
+}
+
+.antena1 p {
+    font-size: 22px;
+    font-weight: 800;
+    color: #00AFAA;
+}
+
+.date input {
+    background-color: #121212;
+    color: #00AFAA;
+    width: 170px;
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #00AFAA;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.total-dia {
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.total-dia h1 {
+    margin: 0;
+    color: #00AFAA;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.total-dia p {
+    margin: 0;
+    color: #00AFAA;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+/* ---------------- LEITURAS E TABELA ---------------- */
+
+.leituras {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    background-color: #121212;
+    padding: 15px;        
+    border-radius: 10px;
+}
+
+.leituras h1 {
+    margin: 0 0 12px 10px;
+    color: #00AFAA;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tabela {
+    width: 100%;
+    background: #1A1A1A;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    text-align: center ;
+}
+
+thead tr {
+    background: #242424;
+}
+
+th {
+    padding: 15px 12px;
+    text-align: left;
+    font-size: 15px;
+    color: #00AFAA;
+    border-bottom: 2px solid #00AFAA22;
+    text-align: center;
+}
+
+tbody tr {
+    background: #1A1A1A;
+    border-bottom: 1px solid #2c2c2c;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 14px 12px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+tbody tr:hover {
+    background: #2A2A2A;
+    transition: 0.25s ease;
+}
+
+
+/* ---------------- LADO DIREITO (GRÁFICO) ---------------- */
+
+.grafico {
+    width: 50%;
+    background-color: #121212;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    padding: 20px;
+}
+
+.grafico canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
