@@ -31,6 +31,27 @@ body {
     gap: 40px;
 }
 
+.btn-fechar {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.btn-fechar img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.75;
+    transition: 0.2s;
+}
+
+.btn-fechar img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
 /* ---------------- LADO ESQUERDO ---------------- */
 
 .container {
@@ -66,6 +87,7 @@ body {
     border: 1px solid #00AFAA;
     padding: 5px 10px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .total-dia {
@@ -96,11 +118,12 @@ body {
 /* ---------------- LEITURAS E TABELA ---------------- */
 
 .leituras {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    background-color: #121212;
-    padding: 15px;        
-    border-radius: 10px;
+    max-height: 45vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .leituras h1 {
     margin: 0 0 12px 10px;
@@ -113,10 +136,10 @@ body {
     width: 100%;
     background: #1A1A1A;
     border-radius: 10px;
-    overflow: hidden;
-    margin-top: 10px;
+    overflow-x: auto;   
+    overflow-y: auto;   
+    max-height: 30vh;   
 }
-
 
 table {
     width: 100%;
@@ -125,8 +148,11 @@ table {
     text-align: center ;
 }
 
-thead tr {
-    background: #242424;
+thead th {
+    position: sticky;
+    top: 0;
+    background: #242424; 
+    z-index: 10;
 }
 
 th {

@@ -83,6 +83,9 @@ body {
 /* GRID DE ANTENAS (NOVO)                                                      */
 /* -------------------------------------------------------------------------- */
 
+a{
+    text-decoration: none;
+}
 .antenas {
     display: grid;
     width: 100%;
@@ -250,4 +253,42 @@ body {
 .leituras-off td:last-child {
     text-align: right;
     width: 5rem;
+}
+
+.modal-antena {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.conteudo-modal {
+    width: 95%;
+    height: 90vh;
+    background: #1A1A1A;
+    border: 3px solid #00AFAA;
+    border-radius: 12px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00AFAA;
+    color: #121212;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
 }
